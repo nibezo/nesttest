@@ -1,9 +1,58 @@
 # Тестовое задание; Админпанель на стеке NestJS/NuxtJS
 
-## Как запустить проект?
+Ссылка на шаблон - [Modernize](https://modernize-vuejs.adminmart.com)
 
-Запустить проект можно через Docker, но также можно и по отдельности, разобрав как устроены Dockerfiles в проектах. Процес запуска через Docker:
+## Установка проекта
 
-1. Склонируйте репозиторий
-   `git clone https://github.com/nibezo/nesttest`
-2. Установите Docker и выполните в папке проекта команду: `docker-compose up --build`
+`git clone https://github.com/nibezo/nesttest`
+
+### Backend
+
+Из корневой папки:
+
+1. `cd backend`
+2. `npm install`
+3. `npm run start:debug`
+
+### Frontend
+
+Из корневой папки:
+
+1. `cd frontend`
+2. `npm install`
+3. `npm run dev`
+
+После установки зайдите на `http://localhost:3000`, логин - `root`, пароль - `LFuHCEx2IQfL`. Пароль и логин можно сменить в .env файле `./backend/.env`, потребуется перезагрузка.
+
+## Описание и эндпойнты
+
+Простая админка с авторизацией (через JWT) и статичными данными. На фронте отрисовывается статистика дат регистраций юзеров и их список.
+
+`api/auth` (POST) - Авторизация
+Принимает JSON в формате:
+
+```json
+{
+  "login": "",
+  "password": ""
+}
+```
+
+Вернет токен JWT, актуальный в течении часа.
+
+`api/users` (GET) - Получение данных о юзере
+В headers нужно передавать `Bearer token`.
+
+Вернет массив с юзерами в формате:
+
+```json
+{
+  "id": 1,
+  "username": "jdoe",
+  "firstName": "John",
+  "lastName": "Doe",
+  "telegram": "@johndoe",
+  "registrationDate": "2024-11-02",
+  "avatar": "/static_uploads/avatars/user1.jpeg"
+}
+```

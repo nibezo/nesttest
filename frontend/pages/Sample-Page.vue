@@ -29,8 +29,10 @@ const fetchUsers = async () => {
     }
     const data: User[] = await response.json();
     usersData.value = data;
+    console.debug(data);
   } catch (err) {
     console.debug("Ошибка данных. Попробуйте еще раз");
+    window.location.href = "/auth/login";
   }
 };
 

@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-// Define the form fields and the error state
-const checkbox = ref(true);
 const login = ref("");
 const password = ref("");
 const error = ref<string | null>(null);

@@ -5,7 +5,7 @@ export const UsersList = [
     firstName: 'John',
     lastName: 'Doe',
     telegram: '@johndoe',
-    registrationDate: '2024-11-01',
+    registrationDate: '2024-11-02',
     avatar: '/static_uploads/avatars/user1.jpeg',
   },
   {
@@ -32,7 +32,7 @@ export const UsersList = [
     firstName: 'Clark',
     lastName: 'Kent',
     telegram: '@superman',
-    registrationDate: '2024-11-04',
+    registrationDate: '2024-11-03',
     avatar: '/static_uploads/avatars/user4.jpeg',
   },
   {
@@ -41,7 +41,7 @@ export const UsersList = [
     firstName: 'Diana',
     lastName: 'Prince',
     telegram: '@wonderwoman',
-    registrationDate: '2024-11-05',
+    registrationDate: '2024-11-03',
     avatar: '/static_uploads/avatars/user5.jpeg',
   },
   {
@@ -50,7 +50,7 @@ export const UsersList = [
     firstName: 'Tony',
     lastName: 'Stark',
     telegram: '@ironman',
-    registrationDate: '2024-11-06',
+    registrationDate: '2024-11-03',
     avatar: '/static_uploads/avatars/user6.jpeg',
   },
   {
@@ -59,7 +59,7 @@ export const UsersList = [
     firstName: 'Peter',
     lastName: 'Parker',
     telegram: '@spiderman',
-    registrationDate: '2024-11-07',
+    registrationDate: '2024-11-05',
     avatar: '/static_uploads/avatars/user7.jpeg',
   },
   {
@@ -68,7 +68,7 @@ export const UsersList = [
     firstName: 'Steve',
     lastName: 'Rogers',
     telegram: '@captainamerica',
-    registrationDate: '2024-11-08',
+    registrationDate: '2024-11-05',
     avatar: '/static_uploads/avatars/user8.jpeg',
   },
   {
@@ -77,7 +77,7 @@ export const UsersList = [
     firstName: 'Bruce',
     lastName: 'Banner',
     telegram: '@hulk',
-    registrationDate: '2024-11-09',
+    registrationDate: '2024-11-05',
     avatar: '/static_uploads/avatars/user9.jpeg',
   },
   {
@@ -86,7 +86,7 @@ export const UsersList = [
     firstName: 'Natasha',
     lastName: 'Romanoff',
     telegram: '@blackwidow',
-    registrationDate: '2024-11-10',
+    registrationDate: '2024-11-06',
     avatar: '/static_uploads/avatars/user10.jpeg',
   },
 ];
