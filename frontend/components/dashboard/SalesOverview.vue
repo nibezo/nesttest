@@ -5,14 +5,12 @@ import { useTheme } from "vuetify";
 const theme = useTheme();
 const primary = theme.current.value.colors.primary;
 const secondary = theme.current.value.colors.secondary;
-const select = ref("March 2023");
-const items = ref(["March 2023", "April 2023", "May 2023"]);
 const chartOptions = computed(() => {
   return {
     series: [
       {
         name: "Earnings this month:",
-        data: [355, 390, 300, 350, 390, 180, 355, 390],
+        data: [355, 390, 300, 350, 390, 180, 355, 3343],
       },
       {
         name: "Expense this month:",
@@ -100,16 +98,10 @@ const chartOptions = computed(() => {
   <v-card elevation="10" class="withbg">
     <v-card-item>
       <div class="d-sm-flex align-center justify-space-between pt-sm-2">
-        <div><v-card-title class="text-h5">Sales Overview</v-card-title></div>
-        <div class="my-sm-0 my-2">
-          <v-select
-            v-model="select"
-            :items="items"
-            variant="outlined"
-            density="compact"
-            hide-details
-          ></v-select>
+        <div>
+          <v-card-title class="text-h5">Статистика регистраций</v-card-title>
         </div>
+        <div class="my-sm-0 my-2"></div>
       </div>
       <div class="mt-6">
         <apexchart

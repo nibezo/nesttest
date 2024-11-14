@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   ssr: false,
   typescript: {
-    shim: false
+    shim: false,
   },
   build: {
     transpile: ["vuetify"],
@@ -16,9 +16,5 @@ export default defineNuxtConfig({
     serveStatic: true,
   },
   devServerHandlers: [],
-  hooks: {
-  },
-
-})
-
-
+  hooks: {},
+});
